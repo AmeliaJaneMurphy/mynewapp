@@ -1,15 +1,21 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 body {
 	padding-top:80px;
 	font-family: 'Lato', sans-serif;
 }
 
 h1 {
-font: Helvetica, sans-serif;
 color: #ffcc33;
-	
+text-transform: uppercase;
+}
+
+
+
+a { 
+color: #ffcc33;
 }
 
 /* Navigation */
@@ -60,4 +66,75 @@ color: #ffcc33;
 	}
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
+	}
+
+
+/* Index Header */
+#bb-header{
+	text-align: center;
+	background: image-url("roadbike.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #cfcfcf;
+
+}
+
+#bb-header .overlay{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height: 750px;
+	background-attachment: fixed;
+}
+
+bb-header p.lead{
+	color: #e3e3e3;
+}
+
+.content{
+	position: relative;
+	padding: 20% 0 0;
+}
+
+.color{
+	color: #ffcc33;
+}
+
+
+/* Footer */
+nav#footer{
+	background: #222222;
+	color: #fff;
+	padding: 20px 0 15px 0;
+}
+nav#footer .fnav{ vertical-align: middle;}
+ul.footer-social li{
+	display: inline-block;
+	margin-right: 10px;
+}
+nav#footer p{
+	font-size: 12px;
+	margin-top: 10px;
+}
+#footer i.fa {
+	height: 30px;
+	width: 30px;
+	border: 2px solid #8c8c8c;
+	font-size: 20px;
+	padding: 4px 5px;
+	border-radius: 50%;
+	color: #ffcc33;
+	transition: all 0.5s;
+}
+
+#footer i.fa:hover{
+	background: #ffcc33;
+	border-color: #ffcc33;
+	color: #ffffff;
 	}

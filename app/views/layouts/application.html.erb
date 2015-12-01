@@ -2,12 +2,13 @@
 <html>
 <head>
   <title>Nameofapp</title>
-	 <!-- CSS
+	 <!-- STYLING
     ==========================================-->  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 	<!-- FONTS
    ==========================================-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 	<!-- JAVASCRIPT
@@ -46,12 +47,24 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-<!-- Header
-    ==========================================-->
-<h1>Welcome to Bike Berlin</h1>
-<h2>Your source for used bikes in Berlin</h2>
-
 <%= yield %>
 
+<!-- Footer
+    ==========================================-->
+<nav id="footer">
+        <div class="container">
+            <div class="pull-left fnav">
+                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2015. Designed and Coded by <a href"#">Amelia Jane Murphy</a></p>
+            </div>
+            <div class="pull-right fnav">
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
