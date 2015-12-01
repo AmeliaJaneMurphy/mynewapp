@@ -1,12 +1,63 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-$primary-font: Helvetica, sans-serif;
-$primary-color: #e59400;
+body {
+	padding-top:80px;
+	font-family: 'Lato', sans-serif;
+}
 
 h1 {
-font: primary-font;
-color: primary-color;
+font: Helvetica, sans-serif;
+color: #ffcc33;
 	
 }
+
+/* Navigation */
+#bb-menu {
+	padding: 20px;
+	transition: all 0.8s;
+}
+
+#bb-menu.navbar-default {
+	background-color: #50514c;
+	border-color: inherit;
+}
+
+#bb-menu a.navbar-brand {
+font-family: 'Righteous', cursive;
+font-size: 36px;
+color: #ffcc33;
+
+}
+
+#bb-menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+#bb-menu ul.nav a:hover{
+	color: #ffcc33 !important;
+	font-weight: 700 !important;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #ffcc33 !important;
+	background-color: transparent;
+	font-weight: 700;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+	}
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+	background-color: #ffcc33;
+	border-color: #ffcc33;
+	}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+	}
