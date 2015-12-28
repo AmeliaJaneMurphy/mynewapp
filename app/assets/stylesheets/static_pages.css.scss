@@ -2,20 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* Full Page */
 body {
 	padding-top:80px;
 	font-family: 'Lato', sans-serif;
 }
 
 h1 {
-color: #ffcc33;
-text-transform: uppercase;
+	color: #50514c;
 }
 
+.section-title{
+	text-align: center;
+}
 
+.color {
+	color: #296FA4;
+}
 
 a { 
-color: #ffcc33;
+	color: #ffcc33;
 }
 
 /* Navigation */
