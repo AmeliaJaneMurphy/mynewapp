@@ -10,7 +10,7 @@
         <div class="thumbnail">
           <img><%= link_to image_tag(product.image_url, class: "img-responsive"), product %></img>
           <div class="caption">
-            <h4 class="pull-right"><%= product.price %></h4>
+            <h4 class="pull-right">&#36;<%= product.price %></h4>
             <h4 class="color"><%= product.name %></h4>
             <p><%= product.description %></p>
             <p class="pull-right"><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
