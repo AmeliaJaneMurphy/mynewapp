@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+products_list = [
+	["Mountain Bike", 100.00, "Lorem ipsum", "mountainbike.jpg"],
+	["City Bike", 100.00, "Lorem ipsum", "streetbike.jpg"],
+	["BMX Bike", 100.00, "Lorem ipsum", "bmxbike.jpg"]
+]
+
+products_list.each do |name, price, description, image_url|
+	Product.create( name: name, price: price, description: description, image_url: image_url)
+end
