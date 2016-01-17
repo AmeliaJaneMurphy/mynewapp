@@ -12,6 +12,7 @@
           <div class="caption">
             <h4 class="pull-right">&#36;<%= product.price %></h4>
             <h4 class="color"><%= product.name %></h4>
+            <h4 class="color"><%= product.product_id%></h4>
             <p><%= product.description %></p>
             <p class="pull-right"><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
             <p><%= link_to 'Edit', edit_product_path(product) %></p>  
