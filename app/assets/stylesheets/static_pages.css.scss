@@ -25,6 +25,21 @@ a {
 	color: #ffcc33;
 }
 
+/* Carousel */
+.carousel-inner img {
+	margin: auto;
+}
+
+.carousel {
+	border: 10px;
+    border-color: #000;
+    border-style: solid;
+}
+
+.carousel-caption {
+	color: #000;
+}
+	
 /* Navigation */
 #bb-menu {
 	padding: 20px;
