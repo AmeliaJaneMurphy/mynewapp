@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160115224303) do
+ActiveRecord::Schema.define(version: 20160117235715) do
 
   create_table "orders", force: :cascade do |t|
     t.integer "user_id"
@@ -30,9 +30,6 @@ ActiveRecord::Schema.define(version: 20160115224303) do
     t.datetime "updated_at",                          null: false
     t.string   "color"
     t.decimal  "price",       precision: 6, scale: 3
-    t.integer  "product_id"
   end
-
-  add_index "products", ["product_id"], name: "index_products_on_product_id"
 
 end
