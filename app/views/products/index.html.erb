@@ -5,20 +5,8 @@
     <hr>
   <div class="container-fluid">
     <div class="row">
-      <% @products.each do |product| %>
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-          <img><%= link_to image_tag(product.image_url, class: "img-responsive"), product %></img>
-          <div class="caption">
-            <h4 class="pull-right">&#36;<%= product.price %></h4>
-            <h4 class="color"><%= product.name %></h4>
-            <p><%= product.description %></p>
-            <p class="pull-right"><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-            <p><%= link_to 'Edit', edit_product_path(product) %></p>  
-          </div>
-        </div>
-      </div><!--end col-->
-      <% end %>
+      <%= render partial: "shared/product", collection: @products %>
+     
     </div>
   </div>
   <%= link_to 'New Product', new_product_path %>
