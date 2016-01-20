@@ -13,6 +13,10 @@
     <% end %>
 
     <div class="field">
+      <%= f.label :image_url %><br>
+      <%= f.text_field :image_url %>
+    </div>
+    <div class="field">    
       <%= f.label :name %><br>
       <%= f.text_field :name %>
     </div>
@@ -24,9 +28,33 @@
       <%= f.label :description %><br>
       <%= f.text_area :description %>
     </div>
+        <div class="field">
+      <%= f.label :details %><br>
+      <%= f.text_field :details %>
+    </div>
     <div class="field">
-      <%= f.label :image_url %><br>
-      <%= f.text_field :image_url %>
+      <%= f.label :style %><br>
+      <%= f.text_field :style %>
+    </div>
+    <div class="field">
+      <%= f.label :frame %><br>
+      <%= f.text_field :frame %>
+    </div>
+    <div class="field">
+      <%= f.label :gears %><br>
+      <%= f.text_field :gears %>
+    </div>
+    <div class="field">
+      <%= f.label :saddle %><br>
+      <%= f.text_field :saddle %>
+    </div>
+    <div class="field">
+      <%= f.label :tires %><br>
+      <%= f.text_field :tires %>
+    </div>
+    <div class="field">
+      <%= f.label :gender %><br>
+      <%= f.text_field :gender %>
     </div>
     <div class="actions">
       <%= f.submit %>

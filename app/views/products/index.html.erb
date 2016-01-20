@@ -5,8 +5,17 @@
     <hr>
   <div class="container-fluid">
     <div class="row">
-      <%= render partial: "shared/product", collection: @products %>
-    </div>
+    	<!--filter to come back to when know more-->
+    	<!--<div class="col-md-3">
+    		<div class="list-group">
+        	<a href="#" class="list-group-item active" data-filter="*">All</a>
+          <a href="#" class="list-group-item" data-filter=".mountain">Mountain Bikes</a>
+          <a href="#" class="list-group-item" data-filter=".steet">Street/Cruisers</a>
+          <a href="#" class="list-group-item" data-filter=".bmx">BMX</a>
+        </div>
+      </div> <!--end list group-->
+    	<%= render @products %>
+  	</div>
   </div>
   <%= link_to 'New Product', new_product_path %>
 
