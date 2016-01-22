@@ -3,7 +3,6 @@ class StaticPagesController < ApplicationController
   def index
   end
   
-
   def landing_page
   	@products = Product.first(3)
   end

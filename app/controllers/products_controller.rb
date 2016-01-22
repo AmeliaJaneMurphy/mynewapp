@@ -1,11 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
-  # GET /landing_page
-  # GET /landing_page.json
-  def landing_page
-  end
-
   # GET /products
   # GET /products.json
   def index
