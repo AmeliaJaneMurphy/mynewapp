@@ -6,16 +6,21 @@
 /* Full Page */
 body {
 	padding-top:80px;
-	font-family: 'Lato', sans-serif;
-}
-
-h1 {
-	color: #50514c;
+	color: #000;
 }
 
 .section-title{
 	text-align: center;
 	padding-top: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.center{
+	text-align: center;
+	padding-top: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .color {
@@ -26,19 +31,47 @@ a {
 	color: #ffcc33;
 }
 
-/* Carousel */
-.carousel-inner img {
-	margin: auto;
+a.visited .btn-xl{
+	color: white;
 }
 
-.carousel {
-	border: 10px;
-    border-color: #000;
-    border-style: solid;
+/* Carousel */
+
+.carousel-indicators {
+  top: auto;
+  bottom: -15px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #000;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+
+.carousel-indicators .active {
+    margin: 10px;
+    background-color: #ffcc33;
+}
+
+.carousel-inner img {
+	margin: auto;
+	maring-bottom: 50px;
+	margin-top: 50px;
 }
 
 .carousel-caption {
-	color: #000;
+	top: -30px;
+    bottom: auto;
+    color:#000;
+    text-shadow: none;
+    text-transform: uppercase;
+	letter-spacing: .5px;
+	text-size: 12px;
 }
 	
 /* Navigation */
@@ -48,7 +81,7 @@ a {
 }
 
 #bb-menu.navbar-default {
-	background-color: #50514c;
+	background-color: #000;
 	border-color: inherit;
 }
 
@@ -95,17 +128,29 @@ color: #ffcc33;
 /* Index Header */
 #bb-header{
 	text-align: center;
-	background: image-url("roadbike.jpg");
+	background: image-url("MainImage4.jpg");
 	background-size: cover;
 	background-position: center center;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: #cfcfcf;
+	height: 750px;
+}
+
+#bb-header h2{
+	margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#fff;
+    font-style: italic;
 
 }
 
-#bb-header h1{
-	color: #ffcc33;
+#bb-header h1 {
+	text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #fff;
 }
 
 #bb-header .overlay{
@@ -126,7 +171,55 @@ color: #ffcc33;
 
 .content{
 	position: relative;
-	padding: 20% 0 0;
+	padding: 10% 0 0;
+}
+
+/* Buttons */
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #296FA4;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
 }
 
 /* Footer */
