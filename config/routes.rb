@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   # Added line from controllers exercise
   resources :orders, only: [:index, :show, :create, :destroy]
   
+  #routes for contact form
+  post 'static_pages/thank_you'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
