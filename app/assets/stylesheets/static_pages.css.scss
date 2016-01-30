@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
 /* Full Page */
 body {
 	padding-top:80px;
@@ -138,6 +139,10 @@ color: #ffcc33;
 .content{
 	position: relative;
 	padding: 10% 0 0;
+}
+
+ul.nav a:hover{
+  background-color: transparent;
 }
 
 /* Carousel */
@@ -276,3 +281,4 @@ nav#footer p{
 	border-color: #ffcc33;
 	color: #ffffff;
 	}
+
