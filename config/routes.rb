@@ -22,8 +22,7 @@ Rails.application.routes.draw do
   #routes for contact form
   post 'static_pages/thank_you'
 
-  #devise
-  devise_for :users, :path =>'', path_names => {:sign_in => 'login', :sign_out => 'logout'}
+
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
