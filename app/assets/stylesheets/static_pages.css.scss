@@ -10,6 +10,10 @@ body {
 	color: #000;
 }
 
+#notice {
+	padding-top:15px;
+}
+
 .section-title{
 	padding-top: 30px;
 	text-transform: uppercase;
@@ -35,6 +39,7 @@ a {
 a.visited{
 	color: white;
 }
+
 
 /* featured */
 #featured {
